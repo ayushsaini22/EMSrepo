@@ -1,0 +1,26 @@
+{
+  "name": "ems",
+  "version": "1.0.0",
+  "description": "Ezilone",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayushsaini22/EMS.git"
+  },
+  "author": "Ayush",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayushsaini22/EMS/issues"
+  },
+  "homepage": "https://github.com/ayushsaini22/EMS#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "nodemailer": "^5.1.1"
+  }
+}
