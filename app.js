@@ -16,7 +16,7 @@ app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'ejs')
 app.engine('html', require('ejs').renderFile);
 
-app.set('port',(process.eventNames.PORT || 3000));
+app.set('port',(process.env.PORT || 3000));
 
 
 app.get('/',(req,res) => {
