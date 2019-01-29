@@ -16,6 +16,7 @@ app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'ejs')
 app.engine('html', require('ejs').renderFile);
 
+app.set('port',(process.eventNames.PORT || 3000));
 
 
 app.get('/',(req,res) => {
@@ -70,4 +71,4 @@ app.post('/send', (req, res) => {
     });
   
 
-app.listen(3000, () => console.log('server started'));
+app.listen(app.get('port'), () => console.log('server started'));
