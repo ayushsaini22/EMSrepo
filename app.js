@@ -40,6 +40,8 @@ app.post('/send', (req, res) => {
     var transporter = nodemailer.createTransport({
 
         service: 'Gmail',
+        secureConnection : true,
+        port: 465,
         auth: {
             // enter your gmail account
             user: 'rahulaws564@gmail.com',
@@ -73,3 +75,7 @@ app.post('/send', (req, res) => {
   
 
 app.listen(app.get('port'), () => console.log('server started'));
+
+
+
+
