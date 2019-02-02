@@ -44,9 +44,9 @@ app.post('/send', (req, res) => {
         port: 465,
         auth: {
             // enter your gmail account
-            user: 'rahulaws564@gmail.com',
+            user: 'ayush007saini@gmail.com',
             // enter your gmail password
-            pass: 'Rahul@564'
+            pass: 'Ayush@2469'
         }
     });
       
