@@ -39,14 +39,16 @@ app.post('/send', (req, res) => {
     // create reusable transporter object using the default SMTP transport
     var transporter = nodemailer.createTransport({
 
-        service: 'Gmail',
-        secureConnection : true,
+        host: 'smtp.gmail.com',
+        secure : true,
         port: 465,
+
         auth: {
-            // enter your gmail account
-            user: 'rahulaws564@gmail.com',
-            // enter your gmail password
-            pass: 'Rahul@564'
+           type: "OAuth2",
+            user: 'ayush007saini@gmail.com',
+            clientId:"695358730166-ffimglg69q21coc5u9md2beqe3563k8e.apps.googleusercontent.com",            
+            clientSecret:"jfL1hRIQCyWr9SRvVJBk9u8X",
+            refreshToken: "1/lxoAA5hPB9I9JTPfI4ffPqccNp7y2qWzESCNUWMgydGqLe4V-PaWlk85NwzYUX0i",
         }
     });
       
