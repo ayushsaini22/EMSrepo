@@ -31,6 +31,7 @@ app.post('/send', (req, res) => {
       <ul>  
         <li>Name: ${req.body.Name}</li>
         <li>Email: ${req.body.Email}</li>
+        <li>Phone: ${req.body.Phone}</li>
       </ul>
       <h3>Message</h3>
       <p>${req.body.Message}</p>
